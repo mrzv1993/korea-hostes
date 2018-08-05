@@ -1,21 +1,27 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import styled from "styled-components";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+import Nav from "./Nav";
+import Header from "./Header";
+import About from "./About";
+import Care from "./Care";
+import Salary from "./Salary";
 
+const Page = styled.div`
+  min-width: 320px;
+  height: 100%;
+`;
+
+const App = () => (
+  <Router>
+    <Page>
+      <Nav />
+      <Header />
+      <About />
+      <Care />
+      <Salary />
+    </Page>
+  </Router>
+);
 export default App;
