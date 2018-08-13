@@ -39,7 +39,7 @@ const SubTitle = styled.h2`
 `;
 
 const Button = styled.button`
-letter-spacing: 1.5px;
+  letter-spacing: 1.5px;
   margin-top: 24px;
   background: #ffffff;
   text-transform: uppercase;
@@ -82,9 +82,7 @@ export default function() {
               <Button>Узнайте больше</Button>
             </Link>
           </div>
-          <div className="col-xs-12 col-lg-6">
-            <Budda />
-          </div>
+          <div className="col-xs-12 col-lg-6">{/* <Budda /> */}</div>
         </div>
       </div>
       <Wave />

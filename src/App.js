@@ -6,7 +6,6 @@ import Nav from "./Nav";
 import Header from "./Header";
 import About from "./About";
 import Care from "./Care";
-import Salary from "./Salary";
 import Demands from "./Demands";
 import Review from "./Review";
 
@@ -23,7 +22,7 @@ const App = () => (
       <About />
       <Care />
       <Demands />
-      <Salary />
+
       <Review />
     </Page>
   </Router>
