@@ -63,7 +63,7 @@ export default function() {
         <Title>Этапы трудоустройства</Title>
         <div className="row">
           <div className="col-xs-12 col-lg-6">
-            <Step>
+            <Step data-aos="fade-down-right">
               <Pic>
                 <img src={anketa} alt="" />
                 <Сounter>1</Сounter>
@@ -78,7 +78,7 @@ export default function() {
             </Step>
           </div>
           <div className="col-xs-12 col-lg-6">
-            <Step>
+            <Step data-aos="fade-down-left">
               <Pic>
                 <img src={call} alt="" />
                 <Сounter>2</Сounter>
@@ -95,7 +95,7 @@ export default function() {
         </div>
         <div className="row">
           <div className="col-xs-12 col-lg-6">
-            <Step>
+            <Step data-aos="fade-up-right">
               <Pic>
                 <img src={contract} alt="" />
                 <Сounter>3</Сounter>
@@ -110,7 +110,7 @@ export default function() {
             </Step>
           </div>
           <div className="col-xs-12 col-lg-6">
-            <Step>
+            <Step data-aos="fade-up-left">
               <Pic>
                 <img src={korea} alt="" />
                 <Сounter>4</Сounter>
