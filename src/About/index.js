@@ -50,6 +50,7 @@ const Link = styled.a`
     position: absolute;
     transition: 0.4s ease-in-out;
   }
+
   &:hover::after {
     transform: translateX(4px);
   }
@@ -64,9 +65,9 @@ const Card = styled.div`
   padding: 24px 32px;
   line-height: 1.32;
   box-shadow: 0px 16px 16px -16px rgba(60, 76, 137, 0.32);
-  transition: 0.32s ease-in-out;
   display: block;
   text-align: center;
+  transition: 0.4s ease-in-out;
 
   @media (min-width: 414px) {
     align-items: center;
@@ -76,11 +77,6 @@ const Card = styled.div`
 
   &:last-child {
     margin-top: 24px;
-  }
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0px 16px 16px -16px rgba(60, 76, 137, 0.4);
   }
 `;
 
@@ -99,7 +95,11 @@ export default function() {
     <Wrapper id="about">
       <div className="container">
         <div className="row">
-          <div className="col-xs-12 col-lg-6">
+          <div
+            className="col-xs-12 col-lg-6"
+            data-aos="fade-right"
+            data-aos-once="true"
+          >
             <Title>
               Сеть караоке-клубов приглашает девушек <br />
               для работы хостес
@@ -123,7 +123,7 @@ export default function() {
             <Link href="#">Посмотреть фотографии клубов</Link>
           </div>
           <div className="col-xs-12 col-lg-6">
-            <Card>
+            <Card data-aos="fade-left">
               <Image src={nosex} alt="" />
               <div>
                 <Title>Без интима</Title>
@@ -135,7 +135,7 @@ export default function() {
                 </p>
               </div>
             </Card>
-            <Card>
+            <Card data-aos="fade-left">
               <Image src={nodrink} alt="" />
               <div>
                 <Title>Пассивная консумация</Title>
