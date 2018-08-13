@@ -10,6 +10,7 @@ import About from "./About";
 import Care from "./Care";
 import Demands from "./Demands";
 import Salary from "./Salary";
+import Steps from "./Steps";
 import Review from "./Review";
 
 const Page = styled.div`
@@ -37,6 +38,7 @@ class App extends React.Component {
           <Care />
           <Demands />
           <Salary />
+          <Steps />
           <Review />
         </Page>
       </Router>
