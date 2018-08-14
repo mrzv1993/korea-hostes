@@ -12,7 +12,6 @@ import Demands from "./Demands";
 import Salary from "./Salary";
 import Steps from "./Steps";
 import Review from "./Review";
-import Mail from "./Mail";
 
 const Main = () => (
   <div>
@@ -24,7 +23,6 @@ const Main = () => (
     <Salary />
     <Steps />
     <Review />
-    <Mail />
   </div>
 );
 export default Main;
