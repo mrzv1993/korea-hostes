@@ -70,19 +70,9 @@ export default function() {
               <p>Оставьте любой контакт, чтобы перейти к заполнению анкеты</p>
               <Form name="mail" method="post">
                 <input type="hidden" name="first-form" value="contact" />
-                <Input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Ваше имя"
-                />
-                <Input
-                  type="text"
-                  name="contact"
-                  id="contact"
-                  placeholder="Контакт"
-                />
-                <Button>Продолжить</Button>
+                <Input type="text" name="name" placeholder="Ваше имя" />
+                <Input type="text" name="contact" placeholder="Контакт" />
+                <Button type="submit">Продолжить</Button>
               </Form>
             </Hero>
           </div>
