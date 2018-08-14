@@ -1,27 +1,27 @@
 import React from "react";
 import styled from "styled-components";
+import { Form, FormGroup, Input, Label, Button } from "reactstrap";
 
-const Wrapper = styled.section`
-  background-color: #fff;
-`;
-
-export default function() {
-  return (
-    <Wrapper id="steps">
-      <div className="container">
-        <div className="row">
-          <div className="col-xs-12">
-            <script src="https://yastatic.net/q/forms-frontend-biz/_/embed.js" />
-            <iframe
-              src="https://connect.yandex.ru/forms/5b72119c2fc07d00aead8eb0/?iframe=1"
-              frameborder="0"
-              name="ya-form-5b72119c2fc07d00aead8eb0"
-              width="650"
-              height="920"
-            />
-          </div>
-        </div>
-      </div>
-    </Wrapper>
-  );
+class ContactForm extends React.Component {
+  render() {
+    return (
+      <Form style={{ width: "600px" }}>
+        <FormGroup>
+          <Label for="name">Имя:</Label>
+          <Input type="text" name="name" />
+        </FormGroup>
+        <FormGroup>
+          <Label for="email">Емейл:</Label>
+          <Input type="text" name="email" />
+        </FormGroup>
+        <FormGroup>
+          <Label for="photo">Емейл:</Label>
+          <Input type="file" name="photo" />
+        </FormGroup>
+        <Button type="submit">Отправить</Button>
+      </Form>
+    );
+  }
 }
+
+export default ContactForm;
