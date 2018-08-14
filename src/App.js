@@ -4,14 +4,8 @@ import styled from "styled-components";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Nav from "./Nav";
-import Header from "./Header";
-import About from "./About";
-import Care from "./Care";
-import Demands from "./Demands";
-import Salary from "./Salary";
-import Steps from "./Steps";
-import Review from "./Review";
+import Main from "./Main";
+import Form from "./Form";
 
 const Page = styled.div`
   min-width: 320px;
@@ -32,14 +26,8 @@ class App extends React.Component {
     return (
       <Router>
         <Page>
-          <Nav />
-          <Header />
-          <About />
-          <Care />
-          <Demands />
-          <Salary />
-          <Steps />
-          <Review />
+          <Route exact path="/" component={Main} />
+          <Route path="/form" component={Form} />
         </Page>
       </Router>
     );

@@ -17,6 +17,7 @@ const Title = styled.h2`
   font-size: 48px;
   line-height: 56px;
   font-weight: 700;
+  text-align: center;
 `;
 
 const SubTitle = styled.h3`
@@ -63,7 +64,7 @@ export default function() {
         <Title>Этапы трудоустройства</Title>
         <div className="row">
           <div className="col-xs-12 col-lg-6">
-            <Step data-aos="fade-down-right">
+            <Step data-aos="fade-down-right" data-aos-once="true">
               <Pic>
                 <img src={anketa} alt="" />
                 <Сounter>1</Сounter>
@@ -78,7 +79,7 @@ export default function() {
             </Step>
           </div>
           <div className="col-xs-12 col-lg-6">
-            <Step data-aos="fade-down-left">
+            <Step data-aos="fade-down-left" data-aos-once="true">
               <Pic>
                 <img src={call} alt="" />
                 <Сounter>2</Сounter>
@@ -95,7 +96,7 @@ export default function() {
         </div>
         <div className="row">
           <div className="col-xs-12 col-lg-6">
-            <Step data-aos="fade-up-right">
+            <Step data-aos="fade-up-right" data-aos-once="true">
               <Pic>
                 <img src={contract} alt="" />
                 <Сounter>3</Сounter>
@@ -110,7 +111,7 @@ export default function() {
             </Step>
           </div>
           <div className="col-xs-12 col-lg-6">
-            <Step data-aos="fade-up-left">
+            <Step data-aos="fade-up-left" data-aos-once="true">
               <Pic>
                 <img src={korea} alt="" />
                 <Сounter>4</Сounter>
