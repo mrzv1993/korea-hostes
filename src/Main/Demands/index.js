@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { HashLink as Link } from "react-router-hash-link";
 
 import girl from "./girl.svg";
 import sakura from "./sakura.svg";
@@ -86,7 +85,7 @@ const Bullet = styled.li`
 
 export default function() {
   return (
-    <Wrapper>
+    <Wrapper id="demands">
       <Bg>
         <Blue />
         <Girl data-aos="fade-left" />

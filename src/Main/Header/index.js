@@ -78,7 +78,7 @@ export default function() {
               Поможем устроиться на&nbsp;работу <br /> в&nbsp;Сеуле
               и&nbsp;других городах
             </SubTitle>
-            <Link smooth to="/some/path#about">
+            <Link smooth to="#about">
               <Button>Узнайте больше</Button>
             </Link>
           </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const Wrapper = styled.div`
   background-color: #fff5f5;
@@ -54,12 +55,15 @@ export default function() {
         <Nav>
           <h2>mia agency</h2>
           <nav>
-            <Link href="#">О нас</Link>
-            <Link href="#">Описание</Link>
-            <Link href="#">Требования</Link>
-            <Link href="#">Зарплата</Link>
-            <Link href="#">Отзывы</Link>
-            <Link href="#">
+            <Link smooth to="/#about">
+              О нас
+            </Link>
+            <Link to="#care">Бесплатно</Link>
+            <Link to="#demands">Требования</Link>
+            <Link to="#salary">Зарплата</Link>
+            <Link to="#review">Отзывы</Link>
+            <Link to="#steps">Трудоустройство</Link>
+            <Link smooth to="#mail">
               <Button>Заполнить анкету</Button>
             </Link>
           </nav>

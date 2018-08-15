@@ -21,7 +21,7 @@ const Title = styled.h3`
   margin-bottom: 4px;
 `;
 
-const Link = styled.a`
+const MyLink = styled.a`
   color: #6869f4;
   font-weight: 600px;
   font-size: 14px;
@@ -120,7 +120,7 @@ export default function() {
               <br /> лет. Компания не&nbsp;останавливается на&nbsp;этом
               и&nbsp;в&nbsp;2018 году открыла клуб во&nbsp;Владивостоке.
             </p>
-            <Link href="#">Посмотреть фотографии клубов</Link>
+            <MyLink to="#">Посмотреть фотографии клубов</MyLink>
           </div>
           <div className="col-xs-12 col-lg-6">
             <Card data-aos="fade-left">
