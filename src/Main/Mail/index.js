@@ -62,7 +62,7 @@ const Button = styled.button`
 export default function() {
   return (
     <Wrapper id="steps">
-      <div className="container">
+      <div className="container" action="/">
         <div className="row">
           <div className="col-xs-12">
             <Hero>
