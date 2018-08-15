@@ -27,12 +27,6 @@ const Bullet = styled.p`
   display: inline-block;
   position: relative;
   padding-left: 16px;
-
-  &::before {
-    content: url(${arrow});
-    margin-left: -16px;
-    position: absolute;
-  }
 `;
 
 const SubTitle = styled.h3`
@@ -116,6 +110,13 @@ const Circle = styled.div`
   }
 `;
 
+const Mark = styled.div`
+  content: url(${arrow});
+  margin-left: -16px;
+  margin-top: 4px;
+  position: absolute;
+`;
+
 export default function() {
   return (
     <Wrapper id="salary">
@@ -124,14 +125,17 @@ export default function() {
           <Title>График работы и заработная плата</Title>
           <div className="col-xs-12 col-lg-4">
             <Bullet>
+              <Mark data-aos="fade-right" data-aos-duration="750" />
               Каждый день с 19:00 до 05:00. Выходной один раз в месяц. При
               условии контракта от четырёх месяцев — два выходных в месяц.
             </Bullet>
             <Bullet>
+              <Mark data-aos="fade-right" data-aos-duration="1000" />
               Средний заработок хостес в месяц составляет 2500-3000$. Всё
               зависит от вашего желания работать.
             </Bullet>
             <Bullet>
+              <Mark data-aos="fade-right" data-aos-duration="1250" />
               Выплата в южнокорейских вонах (KRW) или долларах США. Только
               наличным расчётом.
             </Bullet>

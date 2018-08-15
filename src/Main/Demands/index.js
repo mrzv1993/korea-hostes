@@ -72,15 +72,15 @@ const Bullet = styled.li`
   position: relative;
   padding-left: 24px;
   padding-top: 16px;
+`;
 
-  &::before {
-    content: url(${bullet});
-    margin-left: -24px;
-    margin-top: 16px;
-    top: 3px;
-    position: absolute;
-    transition: 0.4s ease-in-out;
-  }
+const Mark = styled.li`
+  content: url(${bullet});
+  margin-left: -24px;
+  margin-top: 16px;
+  top: 3px;
+  position: absolute;
+  transition: 0.4s ease-in-out;
 `;
 
 export default function() {
@@ -105,15 +105,23 @@ export default function() {
               </Title>
               <ul>
                 <Bullet>
+                  <Mark data-aos="zoom-out-up" data-aos-duration="750" />
                   привлекатьльная внешность и хорошая <br />
                   физическая форма;
                 </Bullet>
                 <Bullet>
+                  <Mark data-aos="zoom-out-up" data-aos-duration="1000" />
                   красивый голос, грамотная речь <br />и отсутствие дефектов
                   дикции;
                 </Bullet>
-                <Bullet>общительность и доброжилательность;</Bullet>
-                <Bullet>стрессоустойчевость и внимательность</Bullet>
+                <Bullet>
+                  <Mark data-aos="zoom-out-up" data-aos-duration="1250" />
+                  общительность и доброжилательность;
+                </Bullet>
+                <Bullet>
+                  <Mark data-aos="zoom-out-up" data-aos-duration="1500" />
+                  стрессоустойчевость и внимательность
+                </Bullet>
               </ul>
             </List>
           </div>

@@ -13,6 +13,7 @@ const Wrapper = styled.section`
   line-height: 1.56;
   padding: 160px 0;
 `;
+
 const Title = styled.h2`
   font-size: 48px;
   line-height: 56px;
