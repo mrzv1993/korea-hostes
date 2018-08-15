@@ -68,7 +68,7 @@ export default function() {
             <Hero>
               <Title>Открывайте для себя новые возможности и страны</Title>
               <p>Оставьте любой контакт, чтобы перейти к заполнению анкеты</p>
-              <Form name="mail">
+              <Form name="mail" method="POST">
                 <input type="hidden" name="mail" value="mail" />
                 <Input type="text" name="name" placeholder="Ваше имя" />
                 <Input type="text" name="contact" placeholder="Контакт" />
