@@ -68,8 +68,12 @@ export default function() {
             <Hero>
               <Title>Открывайте для себя новые возможности и страны</Title>
               <p>Оставьте любой контакт, чтобы перейти к заполнению анкеты</p>
-              <Form name="contact" <form action="https://miawork.ru/form"
-      method="POST">>
+              <Form
+                name="contact"
+                form
+                action="https://miawork.ru/form"
+                method="POST"
+              >
                 <input type="hidden" name="contact" value="contact" />
                 <Input type="text" name="name" placeholder="Ваше имя" />
                 <Input type="text" name="mail" placeholder="Контакт" />
