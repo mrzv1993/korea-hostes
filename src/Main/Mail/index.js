@@ -62,13 +62,13 @@ const Button = styled.button`
 export default function() {
   return (
     <Wrapper id="steps">
-      <div className="container" action="/">
+      <div className="container">
         <div className="row">
           <div className="col-xs-12">
             <Hero>
               <Title>Открывайте для себя новые возможности и страны</Title>
               <p>Оставьте любой контакт, чтобы перейти к заполнению анкеты</p>
-              <Form name="contact" method="post">
+              <Form name="contact" method="post" action="/">
                 <input type="hidden" name="form-name" value="contact" />
                 <Input type="text" name="name" placeholder="Ваше имя" />
                 <Input type="text" name="mail" placeholder="Контакт" />
