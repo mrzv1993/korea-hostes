@@ -5,7 +5,7 @@ const Wrapper = styled.section`
   background-color: #fff;
 `;
 
-export default function() {
+const Form = props => {
   return (
     <Wrapper id="steps">
       <div className="container">
@@ -24,4 +24,6 @@ export default function() {
       </div>
     </Wrapper>
   );
-}
+};
+
+export default Form;

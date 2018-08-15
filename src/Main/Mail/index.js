@@ -69,10 +69,10 @@ export default function() {
               <Title>Открывайте для себя новые возможности и страны</Title>
               <p>Оставьте любой контакт, чтобы перейти к заполнению анкеты</p>
               <Form name="contact" action="/form" method="post">
-                <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="contact" value="contact" />
                 <Input type="text" name="name" placeholder="Ваше имя" />
                 <Input type="text" name="mail" placeholder="Контакт" />
-                <Button type="submit">Продолжить</Button>
+                <Button>Продолжить</Button>
               </Form>
             </Hero>
           </div>
