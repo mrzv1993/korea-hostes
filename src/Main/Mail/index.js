@@ -75,9 +75,13 @@ export default function() {
                 <input
                   type="hidden"
                   name="_next"
-                  value="http://localhost:3000/form"
+                  value="https://miawork.ru/form"
                 />
-                {/* <input type="hidden" name="_cc" value="melkaya_98@mail.ru" /> */}
+                <input
+                  type="hidden"
+                  name="_cc"
+                  value="MiaAgencyKorea@gmail.com"
+                />
                 <input type="hidden" name="_language" value="ru" />
                 <Input type="text" name="Имя" placeholder="Имя" />
                 <Input type="text" name="Контакт" placeholder="Контакт" />

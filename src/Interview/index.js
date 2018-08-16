@@ -83,10 +83,11 @@ export default function() {
                 method="POST"
                 action="https://formspree.io/xxmrzv@gmail.com"
               >
+                <input type="hidden" name="_next" value="https://miawork.ru" />
                 <input
                   type="hidden"
-                  name="_next"
-                  value="http://localhost:3000/"
+                  name="_cc"
+                  value="MiaAgencyKorea@gmail.com"
                 />
                 <input type="hidden" name="_language" value="ru" />
                 {/* Имя и возраст */}
