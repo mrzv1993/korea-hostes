@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.section`
-  background-color: #f6f8ff;
+  background-color: #fcfdff;
   color: #5e6590;
   font-weight: 400;
   line-height: 1.56;

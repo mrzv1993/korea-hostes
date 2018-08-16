@@ -8,7 +8,7 @@ import plane from "./plane.svg";
 import arrow from "../About/arrow.svg";
 
 const Wrapper = styled.section`
-  background-color: #f6f8ff;
+  background: linear-gradient(180deg, #f6f8fe 0%, #fcfdff 100%), #c4c4c4;
   color: #5e6590;
   font-weight: 400;
   line-height: 1.56;

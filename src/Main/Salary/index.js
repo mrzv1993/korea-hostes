@@ -8,7 +8,7 @@ import tea from "./tea.svg";
 import plus from "./plus.svg";
 
 const Wrapper = styled.section`
-  background-color: #f6f8ff;
+  background: linear-gradient(180deg, #fcfdff 0%, #f6f8fe 100%);
   color: #5e6590;
   font-weight: 400;
   line-height: 1.56;
