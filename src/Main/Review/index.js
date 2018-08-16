@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Wrapper = styled.section`
   background-color: #fafcff;
@@ -66,7 +67,7 @@ const Line = styled.div`
   height: 1px;
   background-color: rgba(113, 119, 144, 0);
   border: 0.5px dashed rgba(113, 119, 144, 0.24);
-  margin-top: 16px;
+  margin-top: 24px;
 `;
 
 const SubTitle = styled.h3`
@@ -130,7 +131,7 @@ export default function() {
       <div className="container">
         <Title>Отзывы</Title>
         <div className="row">
-          <Review>
+          <Review id="one">
             <div className="col-xs-12">
               <User>
                 <UserImg>🍉</UserImg>
@@ -139,8 +140,6 @@ export default function() {
                   <City>Владивосток</City>
                 </UserInfo>
               </User>
-            </div>
-            <div className="col-xs-12">
               <Question>
                 <SubTitle>Чем занималась?</SubTitle>
                 <p>
@@ -161,8 +160,6 @@ export default function() {
                 </p>
                 <Line />
               </Question>
-            </div>
-            <div className="col-xs-12">
               <Question>
                 <SubTitle>Что понравилось?</SubTitle>
                 <p>
@@ -181,8 +178,6 @@ export default function() {
                 </p>
                 <Line />
               </Question>
-            </div>
-            <div className="col-xs-12">
               <Question>
                 <SubTitle>Какие были опасения?</SubTitle>
                 <p>
@@ -193,8 +188,6 @@ export default function() {
                 </p>
                 <Line />
               </Question>
-            </div>
-            <div className="col-xs-12">
               <Question>
                 <SubTitle>Какие были опасения?</SubTitle>
                 <p>
@@ -218,8 +211,6 @@ export default function() {
                   <City>Екатеринбург</City>
                 </UserInfo>
               </User>
-            </div>
-            <div className="col-xs-12">
               <Question>
                 <SubTitle>Чем занималась?</SubTitle>
                 <Answer>
@@ -233,7 +224,9 @@ export default function() {
                   корейского языка, ни денежных вложений, ничего! Просто берешь
                   паспорт и едешь! Элементарно!
                 </Answer>
-                <Button>Прочитать все отзывы</Button>
+                <Link to="/reviews#two">
+                  <Button>Прочитать все отзывы</Button>
+                </Link>
               </Question>
             </div>
           </Review>

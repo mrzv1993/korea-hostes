@@ -5,7 +5,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Main from "./Main";
-import Form from "./Form";
+import Interview from "./Interview";
+import Reviews from "./Reviews";
 
 const Page = styled.div`
   min-width: 320px;
@@ -27,7 +28,8 @@ class App extends React.Component {
       <Router>
         <Page>
           <Route exact path="/" component={Main} />
-          <Route path="/form" component={Form} />
+          <Route path="/form" component={Interview} />
+          <Route path="/reviews" component={Reviews} />
         </Page>
       </Router>
     );

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Wrapper = styled.div`
   background-color: #fff5f5;
@@ -14,7 +14,7 @@ const Nav = styled.nav`
   align-items: center;
 `;
 
-const Link = styled.a`
+const CustomLink = styled(Link)`
   margin-left: 24px;
   text-transform: uppercase;
   font-size: 11px;
@@ -55,17 +55,27 @@ export default function() {
         <Nav>
           <h2>mia agency</h2>
           <nav>
-            <Link smooth to="/#about">
+            <CustomLink smooth to="/#about">
               О нас
-            </Link>
-            <Link to="#care">Бесплатно</Link>
-            <Link to="#demands">Требования</Link>
-            <Link to="#salary">Зарплата</Link>
-            <Link to="#review">Отзывы</Link>
-            <Link to="#steps">Трудоустройство</Link>
-            <Link smooth to="#mail">
+            </CustomLink>
+            <CustomLink smooth to="#care">
+              Бесплатно
+            </CustomLink>
+            <CustomLink smooth to="#demands">
+              Требования
+            </CustomLink>
+            <CustomLink smooth to="#salary">
+              Зарплата
+            </CustomLink>
+            <CustomLink smooth to="#review">
+              Отзывы
+            </CustomLink>
+            <CustomLink smooth to="#steps">
+              Трудоустройство
+            </CustomLink>
+            <CustomLink smooth to="#mail">
               <Button>Заполнить анкету</Button>
-            </Link>
+            </CustomLink>
           </nav>
         </Nav>
       </div>

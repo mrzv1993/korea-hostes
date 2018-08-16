@@ -44,10 +44,6 @@ const Input = styled.input`
   max-height: 48px;
 `;
 
-const CapchaInput = styled.input`
-  display: none;
-`;
-
 const Button = styled.button`
   font-size: 12px;
   letter-spacing: 0.08em;
@@ -82,21 +78,10 @@ export default function() {
                   value="http://localhost:3000/form"
                 />
                 {/* <input type="hidden" name="_cc" value="melkaya_98@mail.ru" /> */}
-                <CapchaInput
-                  type="text"
-                  name="_gotcha"
-                  style={{ display: "none" }}
-                />
-                <Input type="text" name="name" placeholder="Имя" />
-                <Input type="text" name="mail" placeholder="Your email" />
-                <input
-                  type="hidden"
-                  role="uploadcare-uploader"
-                  name="content"
-                  data-public-key="01f26f7dbf82084eec5b"
-                  data-multiple="true"
-                  data-images-only
-                />
+                <input type="hidden" name="_language" value="ru" />
+                <Input type="text" name="Имя" placeholder="Имя" />
+                <Input type="text" name="Контакт" placeholder="Контакт" />
+
                 <Button type="submit">Продолжить</Button>
               </Form>
             </Hero>
