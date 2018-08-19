@@ -58,7 +58,6 @@ const Question = styled.h4`
   color: #3b426c;
   margin-top: 16px;
   max-width: 840px;
-  padding-left: 80px;
   position: relative;
 `;
 
@@ -122,7 +121,7 @@ const Button = styled.button`
 `;
 
 const Review = styled.div`
-  margin-top: 64px;
+  margin: 64px auto 0 auto;
 `;
 
 export default function() {

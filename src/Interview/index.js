@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Form, FormGroup, Input, Label, Button } from "reactstrap";
-
 
 const Wrapper = styled.section`
   background: #f6f8ff;
@@ -23,25 +21,34 @@ const SubTitle = styled.h3`
   text-align: center;
 `;
 
-const FormWrapper = styled.div`
+const FormWrapper = styled.div``;
+
+const Form = styled.form``;
+
+const Input = styled.input`
+  margin-top: 8px;
   background: #ffffff;
   box-shadow: 0px 4px 8px rgba(49, 58, 94, 0.08);
   border-radius: 4px;
-  margin-top: 80px;
-  padding: 40px 4% 0 4%;
+  border: none;
+  padding: 16px 32px;
+  width: 100%;
+  font-size: 16px;
 `;
 
-const MyLabel = styled(Label)`
+const Label = styled.label`
   margin-top: 32px;
   font-size: 18px;
   font-weight: 400;
   color: #696cf4;
+  display: block;
 `;
 
 const Caption = styled.p`
   font-size: 13px;
   color: #313a5e;
   line-height: 1.5;
+  margin-bottom: 8px;
 `;
 
 const CustomButton = styled.button`
@@ -93,11 +100,11 @@ export default function() {
                 {/* Имя и возраст */}
                 <div className="row">
                   <div className="col-xs-12 col-md-6">
-                    <MyLabel for="name">Как вас зовут?</MyLabel>
+                    <Label for="name">Как вас зовут?</Label>
                     <Input type="text" name="Имя" id="name" />
                   </div>
                   <div className="col-xs-12 col-md-6">
-                    <MyLabel for="age">Возраст</MyLabel>
+                    <Label for="age">Возраст</Label>
                     <Input type="text" name="Возраст" id="age" />
                   </div>
                 </div>
@@ -105,11 +112,11 @@ export default function() {
                 {/* Рост и Вес */}
                 <div className="row">
                   <div className="col-xs-12 col-md-6">
-                    <MyLabel for="height">Ваш рост</MyLabel>
+                    <Label for="height">Ваш рост</Label>
                     <Input type="text" name="Рост" id="height" />
                   </div>
                   <div className="col-xs-12 col-md-6">
-                    <MyLabel for="weight">Ваш вес</MyLabel>
+                    <Label for="weight">Ваш вес</Label>
                     <Input type="text" name="Вес" id="weight" />
                   </div>
                 </div>
@@ -117,11 +124,11 @@ export default function() {
                 {/* Гражданство и город */}
                 <div className="row">
                   <div className="col-xs-12 col-md-6">
-                    <MyLabel for="citizenship">Гражданство</MyLabel>
+                    <Label for="citizenship">Гражданство</Label>
                     <Input type="text" name="Гражданство" id="citizenship" />
                   </div>
                   <div className="col-xs-12 col-md-6">
-                    <MyLabel for="city">Город</MyLabel>
+                    <Label for="city">Город</Label>
                     <Input type="text" name="Город" id="city" />
                   </div>
                 </div>
@@ -129,7 +136,7 @@ export default function() {
                 {/* Фотографии */}
                 <div className="row">
                   <div className="col-xs-12 col-md-6">
-                    <MyLabel for="content">
+                    <Label for="content">
                       Фотографии
                       <Caption>
                         Прикрепите 8-10 фотографий. Для хостес не обязательны
@@ -137,8 +144,8 @@ export default function() {
                         профессиональные фото, но имейте виду — чем лучше фото,
                         тем лучше.
                       </Caption>
-                    </MyLabel>
-                    <input
+                    </Label>
+                    <Input
                       type="hidden"
                       role="uploadcare-uploader"
                       name="Фотографии"
@@ -152,7 +159,7 @@ export default function() {
                 {/* Ссылка на видео */}
                 <div className="row">
                   <div className="col-xs-12">
-                    <MyLabel for="video">
+                    <Label for="video">
                       Ссылка на видео-презентацию
                       <Caption>
                         Прикрепите 8-10 фотографий. Для хостес не обязательны
@@ -160,7 +167,7 @@ export default function() {
                         профессиональные фото, но имейте виду — чем лучше фото,
                         тем лучше.
                       </Caption>
-                    </MyLabel>
+                    </Label>
                     <Input
                       type="text"
                       name="Видео"
@@ -173,11 +180,11 @@ export default function() {
                 {/* Дата и номер */}
                 <div className="row">
                   <div className="col-xs-12 col-md-6">
-                    <MyLabel for="date">Планируемая дата вылета</MyLabel>
+                    <Label for="date">Планируемая дата вылета</Label>
                     <Input type="text" name="Дата" id="date" />
                   </div>
                   <div className="col-xs-12 col-md-6">
-                    <MyLabel for="phone">Номер телефона</MyLabel>
+                    <Label for="phone">Номер телефона</Label>
                     <Input type="text" name="Телефон" id="phone" />
                   </div>
                 </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { HashLink as Link } from "react-router-hash-link";
 
 import girl from "./girl.svg";
 import sakura from "./sakura.svg";
@@ -83,6 +84,42 @@ const Mark = styled.li`
   transition: 0.4s ease-in-out;
 `;
 
+const CustomLink = styled(Link)`
+  display: block;
+  margin-left: 24px;
+  margin-top: 32px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  color: #3a416f;
+  transition: 0.16s ease-in-out;
+
+  &:hover {
+    color: #ff7e63;
+  }
+`;
+
+const Button = styled.button`
+  text-transform: uppercase;
+  border-radius: 56px;
+  border: none;
+  padding: 16px 24px;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: #fff5f5;
+  cursor: pointer;
+  transition: 0.16s ease-in-out;
+  background: linear-gradient(90deg, #ff8c8c 0%, #ffb0b1 100%);
+  box-shadow: 0px 4px 8px rgba(104, 85, 128, 0.08);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 16px rgba(104, 85, 128, 0.16);
+  }
+`;
+
 export default function() {
   return (
     <Wrapper id="demands">
@@ -122,6 +159,9 @@ export default function() {
                   <Mark data-aos="zoom-out-up" data-aos-duration="1500" />
                   стрессоустойчевость и внимательность
                 </Bullet>
+                <CustomLink smooth to="#mail">
+                  <Button>Заполнить анкету</Button>
+                </CustomLink>
               </ul>
             </List>
           </div>
