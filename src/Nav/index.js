@@ -8,10 +8,25 @@ const Wrapper = styled.div`
   color: #685580;
 `;
 
-const Nav = styled.nav`
+const NavHeader = styled.div`
+  justify-content: space-between;
+  align-items: center
   display: flex;
+  justify-content: center;
+
+    @media (min-width: 991px) {
+    justify-content: space-between;
+    }
+`;
+
+const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
+  display: none;
+
+  @media (min-width: 991px) {
+    display: flex;
+  }
 `;
 
 const CustomLink = styled(Link)`
@@ -52,12 +67,9 @@ export default function() {
   return (
     <Wrapper>
       <div className="container">
-        <Nav>
+        <NavHeader>
           <h2>mia agency</h2>
-          <nav>
-            <CustomLink smooth to="/#about">
-              О нас
-            </CustomLink>
+          <Nav>
             <CustomLink smooth to="#care">
               Бесплатно
             </CustomLink>
@@ -70,14 +82,11 @@ export default function() {
             <CustomLink smooth to="#review">
               Отзывы
             </CustomLink>
-            <CustomLink smooth to="#steps">
-              Трудоустройство
-            </CustomLink>
             <CustomLink smooth to="#mail">
               <Button>Заполнить анкету</Button>
             </CustomLink>
-          </nav>
-        </Nav>
+          </Nav>
+        </NavHeader>
       </div>
     </Wrapper>
   );
