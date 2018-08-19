@@ -64,7 +64,7 @@ const Card = styled.div`
   border-top-right-radius: 0;
   padding: 24px 32px;
   line-height: 1.32;
-  box-shadow: 0px 16px 16px -16px rgba(60, 76, 137, 0.32);
+  box-shadow: rgba(49, 58, 94, 0.24) 0px 15px 30px 1px;
   display: block;
   text-align: center;
   transition: 0.4s ease-in-out;

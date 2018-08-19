@@ -6,23 +6,42 @@ import wave from "./wave.svg";
 import budda from "./budda.svg";
 
 const Wrapper = styled.header`
-  height: 720px;
-  background-color: #fff5f5;
+  background: linear-gradient(
+      248.11deg,
+      #fff5f5 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #ffecf1;
   color: #685580;
+  padding: 160px 0 -20px 0;
   display: flex;
-  padding-top: 160px;
   position: relative;
 `;
 
-const Wave = styled.div`
-  position: absolute;
-  bottom: -2px;
+const HeroWrap = styled.div`
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  position: relative;
+  padding-top: 56px;
+
+  @media (min-width: 991px) {
+    flex-flow: row;
+    padding-top: 56px;
+  }
+`;
+
+const Hero = styled.div`
   width: 100%;
-  height: 100%;
-  background-image: url(${wave});
-  background-size: 100%;
-  background-position: center bottom;
-  background-repeat: no-repeat;
+  height: auto;
+  text-align: center;
+  position: absolute;
+
+  @media (min-width: 991px) {
+    flex-flow: row;
+    text-align: left;
+    position: relative;
+  }
 `;
 
 const Title = styled.h1`
@@ -58,18 +77,34 @@ const Button = styled.button`
   }
 `;
 
-const Budda = styled.div`
-  background-image: url(${budda});
-  width: 676px;
-  height: 480px;
+const Budda = styled.img`
+  width: 100%;
+  height: auto;
+  padding-top: 160px;
+
+  @media (min-width: 991px) {
+    width: 50%;
+    padding-top: 0px;
+  }
+`;
+
+const Wave = styled.div`
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 100%;
+  background-image: url(${wave});
+  background-size: 100%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
 `;
 
 export default function() {
   return (
     <Wrapper>
       <div className="container z-1">
-        <div className="row">
-          <div className="col-xs-12 col-lg-6">
+        <HeroWrap>
+          <Hero>
             <Title>
               Работа в&nbsp;столице <br />
               Южной Кореи
@@ -81,9 +116,9 @@ export default function() {
             <Link smooth to="#about">
               <Button>Узнайте больше</Button>
             </Link>
-          </div>
-          <div className="col-xs-12 col-lg-6">{/* <Budda /> */}</div>
-        </div>
+          </Hero>
+          <Budda src={budda} alt="" />
+        </HeroWrap>
       </div>
       <Wave />
     </Wrapper>
