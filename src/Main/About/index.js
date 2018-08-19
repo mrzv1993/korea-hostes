@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import nosex from "./nosex.svg";
 import nodrink from "./nodrink.svg";
@@ -21,7 +22,7 @@ const Title = styled.h3`
   margin-bottom: 4px;
 `;
 
-const MyLink = styled.a`
+const MyLink = styled(Link)`
   color: #6869f4;
   font-weight: 600px;
   font-size: 14px;
@@ -33,6 +34,7 @@ const MyLink = styled.a`
   font-weight: 500;
   position: relative;
   transition: 0.4s ease-in-out;
+  cursor: pointer;
 
   @media (min-width: 992px) {
     margin-top: 16px;
@@ -120,7 +122,7 @@ export default function() {
               <br /> лет. Компания не&nbsp;останавливается на&nbsp;этом
               и&nbsp;в&nbsp;2018 году открыла клуб во&nbsp;Владивостоке.
             </p>
-            <MyLink to="#">Посмотреть фотографии клубов</MyLink>
+            <MyLink to="/photo/club">Посмотреть фотографии клубов</MyLink>
           </div>
           <div className="col-xs-12 col-lg-6">
             <Card data-aos="fade-left">

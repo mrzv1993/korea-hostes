@@ -5,8 +5,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Main from "./Main";
-import Interview from "./Interview";
 import Reviews from "./Reviews";
+import Interview from "./Interview";
+import Club from "./Photo/Club";
+import Flat from "./Photo/Flat";
 
 const Page = styled.div`
   min-width: 320px;
@@ -30,6 +32,8 @@ class App extends React.Component {
           <Route exact path="/" component={Main} />
           <Route path="/form" component={Interview} />
           <Route path="/reviews" component={Reviews} />
+          <Route path="/photo/club" component={Club} />
+          <Route path="/photo/flat" component={Flat} />
         </Page>
       </Router>
     );

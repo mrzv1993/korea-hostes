@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import home from "./home.svg";
 import docs from "./docs.svg";
@@ -52,7 +53,7 @@ const LinkCard = Card.extend`
   }
 `;
 
-const Link = styled.a`
+const CustomLink = styled(Link)`
   color: #6869f4;
   font-weight: 600px;
   font-size: 14px;
@@ -173,11 +174,11 @@ export default function() {
                 комнате по&nbsp;две.
               </p>
             </RoomCard>
-            <Link href="#">
+            <CustomLink to="/photo/club">
               <LinkCard data-aos="fade-up">
                 <Span>Посмотреть фотографии квартир</Span>
               </LinkCard>
-            </Link>
+            </CustomLink>
           </div>
           <div className="col-xs-12 col-lg-4">
             <FlyCard data-aos="fade-up">
