@@ -110,7 +110,9 @@ const Button = styled.button`
   position: absolute;
   z-index: 3;
   bottom: 0;
-  left: calc(50% - 72px);
+  left: calc(50% - 128px);
+  width: 256px;
+  text-align: center;
   transition: 0.16s ease-in-out;
   box-shadow: 0px 4px 8px rgba(104, 85, 128, 0.08);
 

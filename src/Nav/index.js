@@ -3,7 +3,12 @@ import styled from "styled-components";
 import { HashLink as Link } from "react-router-hash-link";
 
 const Wrapper = styled.div`
-  background-color: #fff5f5;
+  background: linear-gradient(
+      248.11deg,
+      #fff5f5 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #ffecf1;
   padding: 16px 0;
   color: #685580;
 `;
