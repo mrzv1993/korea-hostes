@@ -15,10 +15,14 @@ const Wrapper = styled.section`
 `;
 
 const Title = styled.h2`
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 28px;
+  line-height: 1.5;
   font-weight: 700;
   text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 48px;
+  }
 `;
 
 const SubTitle = styled.h3`
@@ -29,19 +33,34 @@ const SubTitle = styled.h3`
 
 const Step = styled.div`
   display: flex;
+  flex-flow: wrap;
+  justify-content: center;
   margin-top: 96px;
 `;
 
 const Hero = styled.div`
   margin-left: 24px;
   max-width: 280px;
+  font-size: 14px;
+  text-align: center;
+
+  @media (min-width: 428px) {
+    text-align: left;
+  }
+
+  @media (min-width: 1200px) {
+    text-align: center;
+  }
 `;
 
 const Pic = styled.div`
   position: relative;
+  height: 108px;
+  width: 108px;
+  margin-bottom: 16px;
 `;
 
-const Сounter = styled.div`
+const Number = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +72,7 @@ const Сounter = styled.div`
   font-size: 18px;
   color: #6665f4;
   box-shadow: 0px 6px 16px rgba(141, 149, 190, 0.24);
-  bottom: 8px;
+  bottom: 4px;
   right: 0;
   position: absolute;
 `;
@@ -64,11 +83,11 @@ export default function() {
       <div className="container">
         <Title>Этапы трудоустройства</Title>
         <div className="row">
-          <div className="col-xs-12 col-lg-6">
-            <Step data-aos="fade-down-right" data-aos-once="true">
+          <div className="col-xs-12 col-lg-6 col-xl-3">
+            <Step>
               <Pic>
                 <img src={anketa} alt="" />
-                <Сounter>1</Сounter>
+                <Number>1</Number>
               </Pic>
               <Hero>
                 <SubTitle>Анкета</SubTitle>
@@ -79,11 +98,11 @@ export default function() {
               </Hero>
             </Step>
           </div>
-          <div className="col-xs-12 col-lg-6">
-            <Step data-aos="fade-down-left" data-aos-once="true">
+          <div className="col-xs-12 col-lg-6 col-xl-3">
+            <Step>
               <Pic>
                 <img src={call} alt="" />
-                <Сounter>2</Сounter>
+                <Number>2</Number>
               </Pic>
               <Hero>
                 <SubTitle>Инструктаж</SubTitle>
@@ -94,13 +113,12 @@ export default function() {
               </Hero>
             </Step>
           </div>
-        </div>
-        <div className="row">
-          <div className="col-xs-12 col-lg-6">
-            <Step data-aos="fade-up-right" data-aos-once="true">
+
+          <div className="col-xs-12 col-lg-6 col-xl-3">
+            <Step>
               <Pic>
                 <img src={contract} alt="" />
-                <Сounter>3</Сounter>
+                <Number>3</Number>
               </Pic>
               <Hero>
                 <SubTitle>Контракт</SubTitle>
@@ -111,11 +129,11 @@ export default function() {
               </Hero>
             </Step>
           </div>
-          <div className="col-xs-12 col-lg-6">
-            <Step data-aos="fade-up-left" data-aos-once="true">
+          <div className="col-xs-12 col-lg-6 col-xl-3">
+            <Step>
               <Pic>
                 <img src={korea} alt="" />
-                <Сounter>4</Сounter>
+                <Number>4</Number>
               </Pic>
               <Hero>
                 <SubTitle>Прибытие в Корею </SubTitle>

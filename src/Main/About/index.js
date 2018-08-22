@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import nosex from "./nosex.svg";
 import nodrink from "./nodrink.svg";
@@ -14,12 +14,15 @@ const Wrapper = styled.section`
   padding: 160px 0;
 `;
 
-const Title = styled.h3`
-  font-size: 24px;
+const Subtitle = styled.h2`
   font-weight: 400;
-  line-height: 32px;
   color: #3b426c;
-  margin-bottom: 4px;
+  line-height: 1.56;
+  font-size: 18px;
+
+  @media (min-width: 576px) {
+    font-size: 24px;
+  }
 `;
 
 const MyLink = styled(Link)`
@@ -102,10 +105,10 @@ export default function() {
             data-aos="fade-right"
             data-aos-once="true"
           >
-            <Title>
+            <Subtitle>
               Сеть караоке-клубов приглашает девушек <br />
               для работы хостес
-            </Title>
+            </Subtitle>
             <p>
               Хостес&nbsp;&mdash; лицо заведения. Вы&nbsp;будите сопровождать
               гостей, петь в&nbsp;караоке, танцевать и&nbsp;играть
@@ -128,7 +131,7 @@ export default function() {
             <Card data-aos="fade-left">
               <Image src={nosex} alt="" />
               <div>
-                <Title>Без интима</Title>
+                <Subtitle>Без интима</Subtitle>
                 <p>
                   В&nbsp;наших клубах запрещён интим. Для полной безопасности,
                   мы&nbsp;заранее предупреждаем гостей об&nbsp;этом. Так&nbsp;же
@@ -140,7 +143,7 @@ export default function() {
             <Card data-aos="fade-left">
               <Image src={nodrink} alt="" />
               <div>
-                <Title>Пассивная консумация</Title>
+                <Subtitle>Пассивная консумация</Subtitle>
                 <p>
                   Вам не&nbsp;придётся пить алкоголь, если вы&nbsp;этого
                   не&nbsp;хотите. В&nbsp;обязанности входит не&nbsp;предложение

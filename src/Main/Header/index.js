@@ -18,6 +18,30 @@ const Wrapper = styled.header`
   position: relative;
 `;
 
+const Title = styled.h1`
+  font-weight: 600;
+  line-height: 1.4;
+  color: #685580;
+  font-size: 32px;
+  margin-bottom: 16px;
+
+  @media (min-width: 576px) {
+    font-size: 48px;
+  }
+`;
+
+const Subtitle = styled.h2`
+  font-weight: 400;
+  color: #3b426c;
+  line-height: 1.56;
+  font-size: 18px;
+  margin-bottom: 16px;
+
+  @media (min-width: 576px) {
+    font-size: 24px;
+  }
+`;
+
 const HeroWrap = styled.div`
   display: flex;
   align-items: center;
@@ -42,19 +66,6 @@ const Hero = styled.div`
     text-align: left;
     position: relative;
   }
-`;
-
-const Title = styled.h1`
-  font-size: 48px;
-  line-height: 56px;
-  font-weight: 700;
-`;
-
-const SubTitle = styled.h2`
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 32px;
-  margin-top: 24px;
 `;
 
 const Button = styled.button`
@@ -109,10 +120,10 @@ export default function() {
               Работа в&nbsp;столице <br />
               Южной Кореи
             </Title>
-            <SubTitle>
+            <Subtitle>
               Поможем устроиться на&nbsp;работу <br /> в&nbsp;Сеуле
               и&nbsp;других городах
-            </SubTitle>
+            </Subtitle>
             <Link smooth to="#about">
               <Button>Узнайте больше</Button>
             </Link>

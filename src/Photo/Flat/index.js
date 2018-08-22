@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import oneFlat from "./one-flat.jpeg";
 import twoFlat from "./two-flat.jpeg";
