@@ -210,9 +210,7 @@ export default function() {
               </Paragraph>
               <Paragraph>
                 Для девушек из&nbsp;других городов при заключении контракта:
-                <br />
-                до двух месяцев&nbsp;&mdash; 250$; <br />
-                до&nbsp;трёх месяцев&nbsp;&mdash; 500$; <br />
+                <br />1 месяц — 250$; <br />2 месяца — 500$; <br />
                 от&nbsp;трёх месяцев &mdash; полная оплата.
               </Paragraph>
             </FlyCard>
@@ -223,7 +221,7 @@ export default function() {
               <Subtitle>Питание</Subtitle>
               <Paragraph>
                 Питаться вы&nbsp;будете самостоятельно, но&nbsp;за&nbsp;наши
-                деньги. Как только вы&nbsp;прилетите, а&nbsp;далыше раз
+                деньги. Как только вы&nbsp;прилетите, а&nbsp;дальше раз
                 в&nbsp;месяц, мы&nbsp;выдаём 50&nbsp;000 вон на питание.
               </Paragraph>
               <Paragraph>

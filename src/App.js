@@ -9,6 +9,7 @@ import Reviews from "./Reviews";
 import Interview from "./Interview";
 import Club from "./Photo/Club";
 import Flat from "./Photo/Flat";
+import Footer from "./Footer";
 
 const Page = styled.div`
   min-width: 320px;
@@ -35,6 +36,7 @@ class App extends React.Component {
           <Route path="/reviews" component={Reviews} />
           <Route path="/photo/club" component={Club} />
           <Route path="/photo/flat" component={Flat} />
+          <Footer />
         </Page>
       </Router>
     );

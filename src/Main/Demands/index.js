@@ -104,8 +104,6 @@ const Mark = styled.li`
 
 const CustomLink = styled(Link)`
   display: block;
-  margin-left: 24px;
-  margin-top: 32px;
   text-transform: uppercase;
   font-size: 11px;
   font-weight: 500;
@@ -120,6 +118,9 @@ const CustomLink = styled(Link)`
 `;
 
 const Button = styled.button`
+  display: block;
+  margin: 0 auto;
+  margin-top: 32px;
   text-transform: uppercase;
   border-radius: 56px;
   border: none;
@@ -136,6 +137,10 @@ const Button = styled.button`
     transform: translateY(-2px);
     box-shadow: 0px 6px 16px rgba(104, 85, 128, 0.16);
   }
+
+  @media (min-width: 576px) {
+    margin-left: 24px;
+  }
 `;
 
 export default function() {
@@ -151,11 +156,13 @@ export default function() {
           <div className="col-xs-12 col-lg-6 z-1">
             <List>
               <Paragraph>
-                Мы ищем общительных девушек с приятной внешностью <br />
-                от 18 до 32-х лет, ростом не выше 180 сантиметров.
+                Мы&nbsp;ищем общительных девушек с&nbsp;приятной внешностью
+                <br />
+                от&nbsp;18&nbsp;до&nbsp;32-х лет, ростом не&nbsp;выше
+                180&nbsp;сантиметров.
               </Paragraph>
               <Subtitle>
-                Претендентки на должность хостес <br />
+                Претендентки на&nbsp;должность хостес <br />
                 должны соответствовать следующим критериям:
               </Subtitle>
               <ul>
@@ -177,10 +184,10 @@ export default function() {
                   <Mark data-aos="zoom-out-up" data-aos-duration="1500" />
                   стрессоустойчевость и внимательность
                 </Bullet>
-                <CustomLink smooth to="#mail">
-                  <Button>Заполнить анкету</Button>
-                </CustomLink>
               </ul>
+              <CustomLink smooth to="#mail">
+                <Button>Заполнить анкету</Button>
+              </CustomLink>
             </List>
           </div>
         </div>

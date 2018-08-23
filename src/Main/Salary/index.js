@@ -136,21 +136,22 @@ export default function() {
     <Wrapper id="salary">
       <div className="container">
         <div className="row">
-          <Title>График работы и заработная плата</Title>
+          <Title>График работы и&nbsp;заработная плата</Title>
           <div className="col-xs-12 col-lg-4">
             <Bullet>
               <Mark data-aos="fade-right" data-aos-duration="750" />
-              Каждый день с 19:00 до 05:00. Выходной один раз в месяц. При
-              условии контракта от четырёх месяцев — два выходных в месяц.
+              Каждый день с&nbsp;19:00 до&nbsp;05:00. Выходной один раз
+              в&nbsp;месяц. При условии контракта от&nbsp;четырёх
+              месяцев&nbsp;&mdash; два выходных в&nbsp;месяц.
             </Bullet>
             <Bullet>
               <Mark data-aos="fade-right" data-aos-duration="1000" />
-              Средний заработок хостес в месяц составляет 2500-3000$. Всё
-              зависит от вашего желания работать.
+              Средний заработок хостес в&nbsp;месяц составляет 2500-3000$. Всё
+              зависит от&nbsp;вашего желания работать.
             </Bullet>
             <Bullet>
               <Mark data-aos="fade-right" data-aos-duration="1250" />
-              Выплата в южнокорейских вонах (KRW) или долларах США. Только
+              Выплата в&nbsp;южнокорейских вонах (KRW) или долларах США. Только
               наличным расчётом.
             </Bullet>
           </div>
@@ -161,7 +162,7 @@ export default function() {
                 <Card data-aos="zoom-in">
                   <img src={money} alt="" />
                   <p>
-                    Ежемесечный оклад <br /> <span>1 000 000 KRW</span>
+                    Ежемесячный оклад  <br /> <span>1 000 000 KRW</span>
                   </p>
                 </Card>
                 <Card data-aos="zoom-in">

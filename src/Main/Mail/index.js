@@ -6,7 +6,7 @@ const Wrapper = styled.section`
   color: #5e6590;
   font-weight: 400;
   line-height: 1.56;
-  padding: 40px 0;
+  padding: 80px 0;
 `;
 
 const Title = styled.h1`
