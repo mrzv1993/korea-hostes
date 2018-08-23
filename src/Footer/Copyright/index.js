@@ -20,7 +20,7 @@ export default function() {
             © 2018 Mia Agency. Все права защещины.
           </div>
           <div className="col-xs-12 col-md-6 end-xs">
-            Дизайн и разработка сайта — <a href="/">mrzv.design 🌚🌝</a>
+            Дизайн и разработка сайта — <a href="/">mrzv.design</a> 🌚 🌝
           </div>
         </div>
       </div>

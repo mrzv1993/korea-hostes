@@ -11,24 +11,36 @@ const Wrapper = styled.section`
   color: #5e6590;
   font-weight: 400;
   line-height: 1.56;
-  padding: 160px 0;
+  padding: 20px 0;
 `;
 
-const Title = styled.h2`
-  font-size: 28px;
-  line-height: 1.5;
-  font-weight: 700;
+const Title = styled.h1`
+  font-weight: 600;
+  line-height: 1.4;
+  font-size: 32px;
   text-align: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     font-size: 48px;
   }
 `;
 
-const SubTitle = styled.h3`
-  font-size: 24px;
+const Subtitle = styled.h2`
   font-weight: 400;
-  color: #3b426c;
+  line-height: 1.56;
+  font-size: 20px;
+
+  @media (min-width: 576px) {
+    font-size: 24px;
+  }
+`;
+
+const Paragraph = styled.p`
+  font-size: 14px;
+
+  @media (min-width: 576px) {
+    font-size: 15px;
+  }
 `;
 
 const Step = styled.div`
@@ -90,11 +102,11 @@ export default function() {
                 <Number>1</Number>
               </Pic>
               <Hero>
-                <SubTitle>Анкета</SubTitle>
-                <p>
+                <Subtitle>Анкета</Subtitle>
+                <Paragraph>
                   Вы заполняете анкету на сайте, либо отправляете сообщение в
                   мессенджер или на почту.
-                </p>
+                </Paragraph>
               </Hero>
             </Step>
           </div>
@@ -105,11 +117,11 @@ export default function() {
                 <Number>2</Number>
               </Pic>
               <Hero>
-                <SubTitle>Инструктаж</SubTitle>
-                <p>
+                <Subtitle>Инструктаж</Subtitle>
+                <Paragraph>
                   Если вы подходите, наш менеджер свяжется с вами для
                   дальнейшего инструктажа.
-                </p>
+                </Paragraph>
               </Hero>
             </Step>
           </div>
@@ -121,11 +133,11 @@ export default function() {
                 <Number>3</Number>
               </Pic>
               <Hero>
-                <SubTitle>Контракт</SubTitle>
-                <p>
+                <Subtitle>Контракт</Subtitle>
+                <Paragraph>
                   Согласовываем срок контракта, даты вылета и подготавливаем
                   необходимые документы.
-                </p>
+                </Paragraph>
               </Hero>
             </Step>
           </div>
@@ -136,11 +148,11 @@ export default function() {
                 <Number>4</Number>
               </Pic>
               <Hero>
-                <SubTitle>Прибытие в Корею </SubTitle>
-                <p>
+                <Subtitle>Прибытие в Корею </Subtitle>
+                <Paragraph>
                   В аэропорту вас втретит водитель и довезёт до квартиры, в
                   которой вы будете жить.
-                </p>
+                </Paragraph>
               </Hero>
             </Step>
           </div>

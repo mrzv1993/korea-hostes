@@ -18,10 +18,18 @@ const Subtitle = styled.h2`
   font-weight: 400;
   color: #3b426c;
   line-height: 1.56;
-  font-size: 18px;
+  font-size: 20px;
 
   @media (min-width: 576px) {
     font-size: 24px;
+  }
+`;
+
+const Paragraph = styled.p`
+  font-size: 14px;
+
+  @media (min-width: 576px) {
+    font-size: 15px;
   }
 `;
 
@@ -109,22 +117,22 @@ export default function() {
               Сеть караоке-клубов приглашает девушек <br />
               для работы хостес
             </Subtitle>
-            <p>
+            <Paragraph>
               Хостес&nbsp;&mdash; лицо заведения. Вы&nbsp;будите сопровождать
               гостей, петь в&nbsp;караоке, танцевать и&nbsp;играть
               в&nbsp;застольные игры.
-            </p>
-            <p>
+            </Paragraph>
+            <Paragraph>
               В&nbsp;этой работе много плюсов: разностороннее общение, высокая
               заработная плата и&nbsp;отсутствие материальной ответственности.
-            </p>
-            <p>
+            </Paragraph>
+            <Paragraph>
               Наша сеть включает десять клубов в&nbsp;городах, приближённых
               к&nbsp;Сеулу. Шесть из&nbsp;них открыты в&nbsp;Южной Корее уже
               больше трёх
               <br /> лет. Компания не&nbsp;останавливается на&nbsp;этом
               и&nbsp;в&nbsp;2018 году открыла клуб во&nbsp;Владивостоке.
-            </p>
+            </Paragraph>
             <MyLink to="/photo/club">Посмотреть фотографии клубов</MyLink>
           </div>
           <div className="col-xs-12 col-lg-6">
@@ -132,24 +140,24 @@ export default function() {
               <Image src={nosex} alt="" />
               <div>
                 <Subtitle>Без интима</Subtitle>
-                <p>
+                <Paragraph>
                   В&nbsp;наших клубах запрещён интим. Для полной безопасности,
                   мы&nbsp;заранее предупреждаем гостей об&nbsp;этом. Так&nbsp;же
                   не&nbsp;приветствуется общение
                   <br /> с&nbsp;гостями в&nbsp;нерабочее время.
-                </p>
+                </Paragraph>
               </div>
             </Card>
             <Card data-aos="fade-left">
               <Image src={nodrink} alt="" />
               <div>
                 <Subtitle>Пассивная консумация</Subtitle>
-                <p>
+                <Paragraph>
                   Вам не&nbsp;придётся пить алкоголь, если вы&nbsp;этого
                   не&nbsp;хотите. В&nbsp;обязанности входит не&nbsp;предложение
                   гостю напитков, а&nbsp;поддержание атмосферы вечеринки
                   в&nbsp;компании с&nbsp;гостями и&nbsp;коллегами.
-                </p>
+                </Paragraph>
               </div>
             </Card>
           </div>

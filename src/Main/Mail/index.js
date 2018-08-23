@@ -6,28 +6,30 @@ const Wrapper = styled.section`
   color: #5e6590;
   font-weight: 400;
   line-height: 1.56;
-  padding: 80px 0;
+  padding: 40px 0;
 `;
 
-const Title = styled.h2`
-  font-size: 32px;
-  line-height: 56px;
-  font-weight: 400;
-  color: #fd9480;
-  line-height: 1.24;
+const Title = styled.h1`
+  font-weight: 600;
+  line-height: 1.4;
+  font-size: 20px;
+  text-align: center;
+  color: #ff7054;
 
-  @media (min-width: 768px) {
-    font-size: 64px;
+  @media (min-width: 576px) {
+    font-size: 32px;
   }
 `;
 
-const SubTitle = styled.h2`
-  font-size: 16px;
+const Subtitle = styled.h2`
   font-weight: 400;
+  line-height: 1.56;
+  font-size: 16px;
   color: #666f95;
+  padding: 16px 0;
 
-  @media (min-width: 768px) {
-    font-size: 24px;
+  @media (min-width: 576px) {
+    font-size: 18px;
   }
 `;
 
@@ -38,8 +40,12 @@ const Hero = styled.div`
     rgba(255, 169, 169, 1) 100%
   );
   border-radius: 8px;
-  padding: 56px;
   text-align: center;
+  padding: 40px 16px;
+
+  @media (min-width: 576px) {
+    padding: 56px;
+  }
 `;
 
 const Form = styled.form`
@@ -98,7 +104,7 @@ export default function() {
       <div className="container">
         <Hero>
           <Title>Открывайте для себя новые возможности и страны</Title>
-          <SubTitle>Открывайте для себя новые возможности и страны</SubTitle>
+          <Subtitle>Открывайте для себя новые возможности и страны</Subtitle>
           <Form method="POST" action="https://formspree.io/xxmrzv@gmail.com">
             <input type="hidden" name="_next" value="https://miawork.ru/form" />
             <input type="hidden" name="_cc" value="MiaAgencyKorea@gmail.com" />

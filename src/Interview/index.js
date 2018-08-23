@@ -4,21 +4,30 @@ import styled from "styled-components";
 const Wrapper = styled.section`
   background: #f6f8ff;
   padding: 40px 0;
-  height: 100vh;
 `;
 
-const Title = styled.h2`
-  font-size: 48px;
-  line-height: 56px;
-  font-weight: 700;
+const Title = styled.h1`
+  font-weight: 600;
+  line-height: 1.4;
+  font-size: 32px;
   text-align: center;
+  color: #5e6590;
+
+  @media (min-width: 576px) {
+    font-size: 48px;
+  }
 `;
 
-const SubTitle = styled.h3`
-  font-size: 24px;
+const Subtitle = styled.h2`
   font-weight: 400;
-  color: #3b426c;
+  line-height: 1.56;
+  font-size: 14px;
   text-align: center;
+  margin-top: 16px 0;
+  color: #717790;
+  @media (min-width: 576px) {
+    font-size: 16px;
+  }
 `;
 
 const FormWrapper = styled.div``;
@@ -84,10 +93,10 @@ export default function() {
         <div className="row">
           <div className="col-xs-12">
             <Title>Анкета</Title>
-            <SubTitle>
+            <Subtitle>
               В опросе нет пунктов с обязательным ответом, но чем больше вы
               дадите о себе информации, тем быстрее вы получите работу.
-            </SubTitle>
+            </Subtitle>
             <FormWrapper>
               <Form
                 method="POST"

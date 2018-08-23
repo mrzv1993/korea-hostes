@@ -12,21 +12,31 @@ const Wrapper = styled.section`
   color: #5e6590;
   font-weight: 400;
   line-height: 1.56;
-  padding: 160px 0;
+  padding: 80px 0;
 `;
 
-const Title = styled.h2`
-  font-size: 48px;
-  line-height: 56px;
-  font-weight: 700;
+const Title = styled.h1`
+  font-weight: 600;
+  line-height: 1.4;
+  font-size: 32px;
+  margin-bottom: 56px;
   text-align: center;
-  margin-bottom: 96px;
+
+  @media (min-width: 576px) {
+    font-size: 48px;
+  }
 `;
 
 const Bullet = styled.p`
   display: inline-block;
   position: relative;
   padding-left: 16px;
+  font-size: 14px;
+  margin-bottom: 16px;
+
+  @media (min-width: 576px) {
+    font-size: 15px;
+  }
 `;
 
 const SubTitle = styled.h3`
@@ -38,6 +48,10 @@ const SubTitle = styled.h3`
   border-radius: 8px;
   text-align: center;
   margin-top: 32px;
+
+  @media (min-width: 576px) {
+    font-size: 24px;
+  }
 
   @media (min-width: 768px) {
     text-align: left;
