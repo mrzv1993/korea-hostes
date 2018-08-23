@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { HashLink as Link } from "react-router-hash-link";
 
+import logo from "./logo.png";
+
 const Wrapper = styled.div`
   background: linear-gradient(
       248.11deg,
@@ -68,12 +70,17 @@ const Button = styled.button`
   }
 `;
 
+const Logo = styled.img`
+  width: 104px;
+  height: auto;
+`;
+
 export default function() {
   return (
     <Wrapper>
       <div className="container">
         <NavHeader>
-          <h2>mia agency</h2>
+          <Logo src={logo} alt="" />
           <Nav>
             <CustomLink smooth to="#care">
               Бесплатно
