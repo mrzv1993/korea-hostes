@@ -84,7 +84,10 @@ export default function() {
         <div className="row">
           <div className="col-xs-12">
             <Title>Анкета</Title>
-            <SubTitle>Анкета</SubTitle>
+            <SubTitle>
+              В опросе нет пунктов с обязательным ответом, но чем больше вы
+              дадите о себе информации, тем быстрее вы получите работу.
+            </SubTitle>
             <FormWrapper>
               <Form
                 method="POST"

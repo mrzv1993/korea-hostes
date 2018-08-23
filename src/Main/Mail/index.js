@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.section`
-  background-color: #fcfdff;
+  background: linear-gradient(180deg, #fafcff 0%, #f6f8fe 100%);
   color: #5e6590;
   font-weight: 400;
   line-height: 1.56;
-  padding: 160px 0;
+  padding: 80px 0;
 `;
 
 const Title = styled.h2`
@@ -91,45 +91,6 @@ const Button = styled.button`
     margin-left: 8px;
   }
 `;
-
-// export default function() {
-//   return (
-//     <Wrapper id="mail">
-//       <div className="container">
-//         <div className="row">
-//           <div className="col-xs-12">
-//             <Hero>
-//               <Title>Открывайте для себя новые возможности и страны</Title>
-//               <p>Оставьте номер телефона, чтобы перейти к заполнению анкеты</p>
-//               <Form
-//                 method="POST"
-//                 action="https://formspree.io/xxmrzv@gmail.com"
-//               >
-//                 <input
-//                   type="hidden"
-//                   name="_next"
-//                   value="https://miawork.ru/form"
-//                 />
-//                 <input
-//                   type="hidden"
-//                   name="_cc"
-//                   value="MiaAgencyKorea@gmail.com"
-//                 />
-//                 <input type="hidden" name="_language" value="ru" />
-
-//                 <Input type="text" name="Имя" placeholder="Имя" />
-
-//                 <Input type="text" name="Контакт" placeholder="Контакт" />
-
-//                 <Button type="submit">Продолжить</Button>
-//               </Form>
-//             </Hero>
-//           </div>
-//         </div>
-//       </div>
-//     </Wrapper>
-//   );
-// }
 
 export default function() {
   return (

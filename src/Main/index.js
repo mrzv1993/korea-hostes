@@ -9,6 +9,7 @@ import Salary from "./Salary";
 import Steps from "./Steps";
 import Review from "./Review";
 import Mail from "./Mail";
+import Footer from "../Footer";
 
 const Main = () => (
   <div>
@@ -21,6 +22,7 @@ const Main = () => (
     <Steps />
     <Review />
     <Mail />
+    <Footer />
   </div>
 );
 export default Main;
