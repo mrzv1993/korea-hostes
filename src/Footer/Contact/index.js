@@ -85,7 +85,7 @@ export default function() {
             <Text>
               WhatsApp / Telegram:
               <br />
-              <a href="tel:MiaAgencyKorea@gmail.com">8 (999) 057 – 56 – 53</a>
+              <a href="tel:MiaAgencyKorea@gmail.com">+82 10 2357 – 5325</a>
             </Text>
           </Item>
         </Contact>
