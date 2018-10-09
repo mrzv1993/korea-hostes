@@ -78,14 +78,14 @@ export default function() {
               <a href="mailto:matreshkakorea@gmail.com">matreshkakorea@gmail.com</a>
               <br />
               Instagram:{" "}
-              <a href="https://www.instagram.com/mia.work_korea/">
-                mia.work_korea
+              <a href="https://www.instagram.com/matreshka.agency/" target="_blank">
+              matreshka.agency
               </a>
             </Text>
             <Text>
               WhatsApp / Telegram:
               <br />
-              <a href="tel:MiaAgencyKorea@gmail.com">+82 10 2357 – 5325</a>
+              <a href="tel:+821065004423">+82 10 6500 – 4423</a>
             </Text>
           </Item>
         </Contact>
