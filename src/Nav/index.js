@@ -71,7 +71,7 @@ const Button = styled.button`
 `;
 
 const Logo = styled.img`
-  width: 104px;
+  width: 218px;
   height: auto;
 `;
 

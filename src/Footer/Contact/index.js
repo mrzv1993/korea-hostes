@@ -75,7 +75,7 @@ export default function() {
             <Title>Контакты</Title>
             <Text>
               Email:{" "}
-              <a href="mailto:MiaAgencyKorea@gmail.com">hello@miawork.ru </a>
+              <a href="mailto:matreshkakorea@gmail.com">matreshkakorea@gmail.com</a>
               <br />
               Instagram:{" "}
               <a href="https://www.instagram.com/mia.work_korea/">

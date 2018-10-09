@@ -17,7 +17,7 @@ export default function() {
       <div className="container">
         <div className="row between-xs">
           <div className="col-xs-12 col-md-6">
-            © 2018 Mia Agency. Все права защищены.
+            © 2018 Matreshka Agency. Все права защищены.
           </div>
           <div className="col-xs-12 col-md-6 end-xs">
             Дизайн и разработка сайта — <a href="/">mrzv.design</a> 🌚 🌝
