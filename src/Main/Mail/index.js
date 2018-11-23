@@ -106,7 +106,7 @@ export default function() {
           <Title>Открывайте для себя новые возможности и страны</Title>
           <Subtitle>Открывайте для себя новые возможности и страны</Subtitle>
           <Form method="POST" action="https://formspree.io/xxmrzv@gmail.com">
-            <input type="hidden" name="_next" value="https://miawork.ru/form" />
+            <input type="hidden" name="_next" value="https://matreshkawork.ru/form" />
             <input type="hidden" name="_cc" value="MiaAgencyKorea@gmail.com" />
             <input type="hidden" name="_language" value="ru" />
             <Input type="text" name="Имя" placeholder="Имя" />
